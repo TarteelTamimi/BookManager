@@ -34,7 +34,6 @@ router.post('/', (req: Book.Request, res: Book.Response) => {
         author: req.body.author,
         publicationYear: req.body.publicationYear
     };
-
     data.unshift(newBook);
     res.status(201).send('Task Created');
 });
