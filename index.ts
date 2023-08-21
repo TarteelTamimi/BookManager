@@ -9,6 +9,10 @@ app.get('/', (req, res) => {
     res.send('Server Up!');
 });
 
+app.get('/health', (req, res) => {
+    res.send('OK!!')
+});
+
 app.use('/book', bookRouter);
 
 app.listen(PORT, () => {
